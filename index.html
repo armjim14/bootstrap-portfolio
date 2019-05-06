@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>bootstrap</title>
-    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         .right {
@@ -13,25 +13,33 @@
         #button {
             float: left;
         }
-        /* nav #header {
-            background-color:aquamarine;
-        } */
 
         .container {
-            background-color: red;
+            background-color: lightgray;
             height: 500px;
             margin-top: 65px;
-            font-size: 22px;
         }
 
-        @media screen and (max-width: 991px) {
-            .right { position: relative; }
+        #test {
+            background-color: blue;
+        }
+
+        #move {
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            width: 100%;
+            background-color: gray;
+            position: absolute;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Armando Jimenez</a>
         <button id="button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -53,11 +61,23 @@
     <!-- header ends -->
 <div class="container">
     <div class="row">
-        <div class="col-sm">
-            About
+        <div class="col-md-12 border-bottom border-secondary">
+            <h2>About</h2>
         </div>
-    </div>
-</div>
+    </div> <!-- first row ends here -->
+    <div id="move" class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" src="images/propic.jpg" alt="Profile Picture">
+        </div>
+        <div class="col-md-8">
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa cupiditate accusantium, placeat voluptatum veniam recusandae quae nihil sed officiis esse, adipisci nesciunt sunt ad exercitationem eveniet, perferendis minima inventore harum. </p>            
+        </div>
+    </div> <!-- second row ends here -->
+</div> <!--Container ends here-->
+
+<footer>
+    <p class="text-white">c</p>
+</footer>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
