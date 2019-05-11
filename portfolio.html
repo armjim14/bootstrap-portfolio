@@ -4,49 +4,67 @@
     <title>bootstrap</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
     <style>
-        .right {
-            position: absolute;
-            right: 0;
+        @media screen and (max-width: 600px) {
+            #diff { font-size: 24px!important; }
         }
 
-        .container {
-            background-color: lightgray;
-            height: 500px;
-            margin-top: 65px;
+        @media screen and (max-width: 295px) {
+            a { padding: 0 5px 0 5px!important; }
+            ul { float: left!important; }
+            #name { margin-bottom: 10px; border-bottom-color: rgb(124, 70, 70); border-bottom-width: 1px; border-bottom-style: solid; }
         }
-
     </style>
 </head>
-<body>
-<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Armando Jimenez</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            
-    <div class="right collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">About </a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-    <!-- header ends -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            Portfolio
+<body class="bg-secondary">
+
+    <!-- header ends 767 575 -->
+<div class="container-fluid">
+    <div class="row bg-primary mb-5 pb-4">
+        <div id="name" class="col-md-6">
+            <h2 class="text-white">Armando Jimenez</h2>
         </div>
-    </div>
-</div>
+        <div id="cen" class="col-md-6">
+            <ul class="nav" style="float: right;">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div><!-- col ends -->
+    </div> <!-- header row ends -->
+
+    
+    <div class="row bg-light">
+        <div class="col-md-12 border-bottom border-secondary pb-3 mb-3">
+            <h2>About</h2>
+        </div>
+    </div> <!-- first row ends here -->
+
+
+    <div id="move" class="row bg-light pb-5">
+        <div class="col-md-8 ml-5 pl-5 pb-5">
+            <img src="images/pic1.png" alt="pic 1" class="img-thumbnail pr-5 ml-5">
+            <img src="images/pic2.jpg" alt="pic 2" class="img-thumbnail pr-5 ml-5">
+            <img src="images/pic3.png" alt="pic 3" class="img-thumbnail ml-5">
+        </div>
+        <div class="col-md-9 ml-5 pl-5">
+            <img src="images/pic4.png" alt="pic 4" class="img-thumbnail ml-5 pl-5">
+            <img src="images/pic5.png" alt="pic 5" class="img-thumbnail pl-5 ml-5">
+        </div>
+    </div> <!-- second row ends here -->
+
+    <footer class="text-center footer fixed-bottom col-md-12 bg-primary mt-5 text-white pt-2 pb-1">
+        <p> C </p>
+    </footer>
+</div> <!--Container ends here-->
+
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
